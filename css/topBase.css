@@ -1,0 +1,139 @@
+
+h1{
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+
+#view{
+  z-index: 0;
+}
+
+#wrapper{
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  color: #fff;
+}
+
+.bar{
+  color: rgb(100, 104, 100);
+}
+/*========= particle js を描画するエリア設定 ===============*/
+
+body{
+   height: 100%; /*高さを100%にして描画エリアをとる */
+   width: 100%; 
+}
+
+body{
+  margin: 0;
+}
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-5;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+
+  background-color:#000000;/*背景色*/
+}
+
+#wrapper{
+  position: relative;  /*描画を#particles-jsよりも上にするためposition:relative;を指定 */
+  z-index: 0;  /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に */
+  width: 100%;
+  height: 100%;
+}
+
+.left{
+  text-align: left;
+  padding-left: 150px;
+  font-size: 30px;
+}
+
+.right{
+  text-align: right;
+  padding-right: 150px;
+  font-size: 30px;
+}
+
+/* top */
+#topImage{
+  margin-left: 40px;
+  margin-top: 100px;
+  text-align: left;
+}
+
+#top1 >p{
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* gallert */
+#movies{
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex
+}
+
+.item {
+  /* 横スクロール用 */  
+  width: 700px;
+  margin: 0 15px;
+  /* 見た目調整 */
+  font-size: 28px;
+}
+
+#movies li video{
+  width: 700px;
+  height: 600px;
+}
+
+
+/* profile */
+
+#introduction{
+  margin: 0 40px;
+}
+
+#introduction p{
+  font-size: 17px;
+}
+
+#biography{
+  font-size: 17px;
+  text-align: left;
+}
+
+#introduction dl{
+  text-align: left;
+  font-size: 15px;
+}
+
+#profimage{
+  width: 250px;
+  height: 250px;
+  margin: -150px 0 0 70%;
+
+}
+
+
+/* contents */
+#content{
+  text-align: center;
+}
+
+#contents li{
+  display: inline-block;
+  padding: 20px 20px 10px 20px;
+}
+
+#contents li p{
+  margin-top: 0;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+}
