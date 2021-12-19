@@ -21,9 +21,6 @@
 body{
   height: 100%; /*高さを100%にして描画エリアをとる */
   width: 100%; 
-}
-
-body{
   margin: 0;
 }
 
@@ -56,7 +53,7 @@ body{
 }
 
 main{
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .bar{
@@ -65,8 +62,16 @@ main{
 }
 
 h1{
-  margin: 0 auto;
   font-size: 50px;
+  text-align: center;
+  background-color: rgb(129, 124, 124);
+}
+
+header{
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  z-index: 100;
 }
 
 
