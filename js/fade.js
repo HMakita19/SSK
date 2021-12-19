@@ -4,7 +4,7 @@ function fadeAnime(){
 
   // ふわっ
   $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
-    var elemPos = $(this).offset().top-50;//要素より、50px上の
+    var elemPos = $(this).offset().top-40;//要素より、50px上の
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
@@ -22,4 +22,4 @@ function fadeAnime(){
 // 画面が読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function(){
     fadeAnime();/* アニメーション用の関数を呼ぶ*/
-  });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+  }); //ここまで画面が読み込まれたらすぐに動かしたい場合の記述
