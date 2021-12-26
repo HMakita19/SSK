@@ -10,8 +10,7 @@
 #wrapper{
   justify-content: center;
   align-items: center;
-  text-align:center;
-  color: #fff;
+  text-align: center;
 }
 
 
@@ -22,6 +21,7 @@ body{
   height: 100%; /*高さを100%にして描画エリアをとる */
   width: 100%; 
   margin: 0;
+  color: rgb(158, 158, 158);
 }
 
 #particles-js{ 
@@ -29,7 +29,6 @@ body{
   z-index:-5;/*描画を一番下に*/
   width: 100%;
   height: 100%;
-
   background-color:#000000;/*背景色*/
 }
 
@@ -43,17 +42,15 @@ body{
 .left{
   text-align: left;
   padding-left: 200px;
-  font-size: 30px;
 }
 
 .right{
   text-align: right;
   padding-right: 200px;
-  font-size: 30px;
 }
 
 main{
-  padding-top: 150px;
+  padding-top: 70px;
 }
 
 .bar{
@@ -63,15 +60,27 @@ main{
 
 h1{
   font-size: 50px;
+  font-family: 'Playfair Display', serif;
   text-align: center;
-  background-color: rgb(129, 124, 124);
+  color: white;
+  padding: 20px 0 20px;
+}
+
+h2{
+  font-size: 35px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  padding: 10px 0 20px;
 }
 
 header{
   width: 100%;
   height: 110px;
-  position: fixed;
-  z-index: 100;
+  z-index: 10;
+}
+
+.separation{
+  margin-top: 10px;
 }
 
 
@@ -84,6 +93,7 @@ header{
   height: 200px;
   border: 5px solid rgb(90, 88, 88);
   margin-left: 70%;
+  margin-top: -100px;
 }
 
 #top1 p{
@@ -92,14 +102,33 @@ header{
   line-height: 150%;
 }
 
+#top1 ul{
+  padding: 5px 0 5px;
+  text-align: left;
+  padding-left: 10%;
+  line-height: 150%;
+  font-size: 20px;
+  color: rgb(231, 231, 231);
+}
+
+#top1 ul li{
+  margin: 3px 0 3px;
+}
+
+#top1 strong{
+  color: white;
+  font-size: 18px;
+}
+
 #top1{
   margin-bottom: 40px;
 }
 
-#top2 p{
-  text-align: left;
-  padding-left: 25%;
-  line-height: 300%;
+#top2 ul li{
+  margin: 10px 0 10px;
+  font-size: 25px;
+  color: white;
+  line-height: 250%;
 }
 
 /* gallert */
@@ -146,7 +175,7 @@ header{
 
 #profimage{
   width: 250px;
-  height: 250px;
+  height: 300px;
   margin: -150px 0 0 70%;
 
 }
