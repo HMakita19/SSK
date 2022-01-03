@@ -87,21 +87,18 @@ header{
 
 
 /* top */
-
 #topImage{
   width: 200px;
   height: 200px;
   border: 5px solid rgb(90, 88, 88);
   margin-left: 70%;
-  margin-top: -100px;
+  margin-top: -200px;
 }
-
 #top1 p{
   text-align: left;
   padding-left: 10%;
   line-height: 150%;
 }
-
 #top1 ul{
   padding: 5px 0 5px;
   text-align: left;
@@ -110,20 +107,16 @@ header{
   font-size: 20px;
   color: rgb(231, 231, 231);
 }
-
 #top1 ul li{
   margin: 3px 0 3px;
 }
-
 #top1 strong{
   color: white;
   font-size: 18px;
 }
-
 #top1{
   margin-bottom: 40px;
 }
-
 #top2 ul li{
   margin: 10px 0 10px;
   font-size: 25px;
@@ -131,14 +124,13 @@ header{
   line-height: 250%;
 }
 
-/* gallert */
 
+/* gallert */
 #movies{
   overflow-x: scroll;
   white-space: nowrap;
   display: flex
 }
-
 .item {
   /* 横スクロール用 */  
   width: 700px;
@@ -146,7 +138,6 @@ header{
   /* 見た目調整 */
   font-size: 28px;
 }
-
 #movies li video{
   width: 700px;
   height: 600px;
@@ -154,25 +145,20 @@ header{
 
 
 /* profile */
-
 #introduction{
   margin: 0 40px;
 }
-
 #introduction p{
   font-size: 17px;
 }
-
 #biography{
   font-size: 17px;
   text-align: left;
 }
-
 #introduction dl{
   text-align: left;
   font-size: 15px;
 }
-
 #profimage{
   width: 250px;
   height: 300px;
@@ -182,16 +168,13 @@ header{
 
 
 /* contents */
-
 #content li{
   display: inline-block;
   padding: 20px 20px 10px 20px;
 }
-
 #contents li p{
   margin-top: 0;
 }
-
 .icon{
   width: 50px;
   height: 50px;
@@ -202,7 +185,6 @@ header{
 #works * p{
   line-height: 200%;
 }
-
 footer{
   margin-top: 20px;
 }
