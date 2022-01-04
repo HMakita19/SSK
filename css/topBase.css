@@ -6,6 +6,10 @@
 #view{
   z-index: 0;
 }
+body{
+  font-size: 17px;
+  color: rgb(170, 170, 170);
+}
 
 #wrapper{
   justify-content: center;
@@ -21,7 +25,6 @@ body{
   height: 100%; /*高さを100%にして描画エリアをとる */
   width: 100%; 
   margin: 0;
-  color: rgb(158, 158, 158);
 }
 
 #particles-js{ 
@@ -29,7 +32,7 @@ body{
   z-index:-5;/*描画を一番下に*/
   width: 100%;
   height: 100%;
-  background-color:#000000;/*背景色*/
+  background-color:#190120;/*背景色*/
 }
 
 #wrapper{
@@ -59,7 +62,7 @@ main{
 }
 
 h1{
-  font-size: 50px;
+  font-size: 60px;
   font-family: 'Playfair Display', serif;
   text-align: center;
   color: white;
@@ -67,7 +70,7 @@ h1{
 }
 
 h2{
-  font-size: 35px;
+  font-size: 50px;
   font-family: 'Playfair Display', serif;
   color: white;
   padding: 10px 0 20px;
@@ -82,6 +85,13 @@ header{
 .separation{
   margin-top: 10px;
 }
+.icon{
+  width: 70px;
+  height: 70px;
+}
+.line-h{
+  line-height: 170%;
+}
 
 
 
@@ -91,8 +101,8 @@ header{
   width: 200px;
   height: 200px;
   border: 5px solid rgb(90, 88, 88);
-  margin-left: 70%;
-  margin-top: -200px;
+  margin:  -300px 0 0 70%;
+
 }
 #top1 p{
   text-align: left;
@@ -148,22 +158,24 @@ header{
 #introduction{
   margin: 0 40px;
 }
-#introduction p{
-  font-size: 17px;
-}
 #biography{
-  font-size: 17px;
+  color: rgb(183, 183, 183);
+  font-size: 20px;
   text-align: left;
+  padding: 5px 0 15px 50px;
 }
 #introduction dl{
   text-align: left;
-  font-size: 15px;
+  padding-left: 50px;
 }
 #profimage{
   width: 250px;
   height: 300px;
   margin: -150px 0 0 70%;
-
+  border-radius: 20px;
+}
+#biographyList dd{
+  padding-bottom: 10px;
 }
 
 
@@ -175,16 +187,16 @@ header{
 #contents li p{
   margin-top: 0;
 }
-.icon{
-  width: 50px;
-  height: 50px;
-}
 
 
 /*work*/
-#works * p{
-  line-height: 200%;
-}
 footer{
   margin-top: 20px;
+}
+#workImage{
+  margin: 15px 0 15px;
+}
+#caution{
+  font-size: 18px;
+  color: rgb(196, 61, 61);
 }
