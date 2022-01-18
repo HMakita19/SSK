@@ -104,12 +104,12 @@ header{
   margin:  -300px 0 0 70%;
 
 }
-#top1 p{
+#top1,#top3 p{
   text-align: left;
   padding-left: 10%;
   line-height: 150%;
 }
-#top1 ul{
+#top1,#top3 ul{
   padding: 5px 0 5px;
   text-align: left;
   padding-left: 10%;
@@ -127,7 +127,10 @@ header{
 #top1{
   margin-bottom: 40px;
 }
-#top2 ul li{
+#top2{
+  text-align: center;
+}
+#top5 ul li{
   margin: 10px 0 10px;
   font-size: 25px;
   color: white;
