@@ -10,7 +10,7 @@
 }
 body{
   font-size: 18px;
-  color: rgb(170, 170, 170);
+color: rgb(255, 255, 255);
   font-family: "Hiragino Kaku Gothic proN", "メイリオ", "sans-serif";
 }
 
@@ -50,12 +50,12 @@ body{
 
 .left{
   text-align: left;
-  padding-left: 10%;
+  padding-left: 8%;
 }
 
 .right{
   text-align: right;
-  padding-right: 10%;
+  padding-right: 8%;
 }
 
 main{
@@ -71,14 +71,14 @@ h1{
   font-size: 60px;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  color: white;
+  /* color: white; */
   padding: 20px 0 20px;
 }
 
 h2{
   font-size: 50px;
   font-family: 'Playfair Display', serif;
-  color: white;
+  /* color: white; */
   padding: 10px 0 20px;
 }
 
@@ -88,13 +88,11 @@ header{
   z-index: 10;
 }
 
-.separation{
-  margin-top: 10px;
-}
 .icon{
   width: 70px;
   height: 70px;
 }
+
 .line-h{
   line-height: 1.7;
 }
@@ -141,7 +139,6 @@ header{
 #top5 ul li{
   margin: 10px 0 10px;
   font-size: 25px;
-  color: white;
   line-height: 2.5;
 }
 
@@ -182,11 +179,17 @@ header{
 #profimage{
   width: 250px;
   height: 300px;
-  margin: -150px 0 0 70%;
+  margin: -200px 0 0 70%;
   border-radius: 20px;
 }
-#biographyList dd{
+#biographyList{
+  margin-bottom: 30px;
+}
+#biographyList dl dd{
   padding-bottom: 10px;
+}
+#soft ul li{
+  padding: 20px 0 20px;
 }
 
 
@@ -198,6 +201,7 @@ header{
 #contents li p{
   margin-top: 0;
 }
+
 
 
 /*work*/
