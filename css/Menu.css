@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*メニュー表示位置調整*/
 .menu-btn {
     position: fixed;
