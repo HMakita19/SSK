@@ -11,6 +11,7 @@
 body{
   font-size: 17px;
   color: rgb(170, 170, 170);
+  font-family: "Hiragino Kaku Gothic proN", "メイリオ", "sans-serif";
 }
 
 #wrapper{
@@ -49,12 +50,12 @@ body{
 
 .left{
   text-align: left;
-  padding-left: 200px;
+  padding-left: 10%;
 }
 
 .right{
   text-align: right;
-  padding-right: 200px;
+  padding-right: 10%;
 }
 
 main{
@@ -109,32 +110,34 @@ header{
   margin:  -300px 0 0 70%;
 
 }
-#top1,#top3 p{
+#top1,#top2,#top3,#top4{
+  margin-bottom: 40px;
+}
+#top1 p,#top3 p{
   text-align: left;
-  padding-left: 10%;
   line-height: 1.5;
 }
-#top1,#top3 ul{
+#top1 ul,#top3 ul{
   padding: 5px 0 5px;
   text-align: left;
-  padding-left: 10%;
   line-height: 1.5;
   font-size: 20px;
   color: rgb(231, 231, 231);
 }
-#top1 ul li{
-  margin: 3px 0 3px;
+#top2 p,#top4 p{
+  /* text-align: right; */
+  font-family: 'EB Garamond', serif;
+  line-height: 1.5;
 }
-#top1 strong{
-  color: white;
-  font-size: 18px;
+#top2 ul,#top4 ul{
+  padding: 5px 0 5px;
+  /* text-align: right; */
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+  color: rgb(231, 231, 231);
 }
-#top1{
-  margin-bottom: 40px;
-}
-#top2{
-  text-align: center;
-}
+
 #top5 ul li{
   margin: 10px 0 10px;
   font-size: 25px;
