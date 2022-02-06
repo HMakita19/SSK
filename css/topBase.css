@@ -178,8 +178,8 @@ header{
 #introduction{
   margin: 0 40px;
 }
-#biography{
-  color: rgb(183, 183, 183);
+#biographylist h4{
+  color: rgb(255, 255, 255);
   text-align: left;
   padding: 5px 0 15px 50px;
   margin-top: 50px;
@@ -211,9 +211,12 @@ header{
 }
 
 #soft h4{
+  color: rgb(255, 255, 255);
   text-align: right;
+  padding: 5px 15px 0webpx 50px;
   margin-top: 50px;
 }
+
 #soft dl{
   width: 100%;
   display: flex;
