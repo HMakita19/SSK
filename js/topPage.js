@@ -6,7 +6,7 @@ particlesJS("particles-js", {   //アニメーションを表示する要素(id)
         enable: true,   //true:有効, false:無効
         value_area: 500   // 表示間隔
       }
-     },
+    },
     color: { value: "#ffffff" },
     shape: {
       type: "circle",  // シェイプの形

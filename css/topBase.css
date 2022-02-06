@@ -6,12 +6,16 @@
 }
 
 #view{
-  z-index: 0;
+  z-index: 1;
 }
 body{
-  font-size: 18px;
-color: rgb(255, 255, 255);
+  font-size: 100%;
+  color: rgb(255, 255, 255);
   font-family: "Hiragino Kaku Gothic proN", "メイリオ", "sans-serif";
+}
+
+img{
+  width: 100%;
 }
 
 #wrapper{
@@ -31,10 +35,10 @@ body{
 
 #particles-js{ 
   position:fixed;/*描画固定*/
-  z-index:-5;/*描画を一番下に*/
+  z-index:-1;/*描画を一番下に*/
   width: 100%;
   height: 100%;
-  background-color:#190120;/*背景色*/
+  background-color:#000000;/*背景色*/
 }
 
 #wrapper{
@@ -67,25 +71,30 @@ main{
   line-height: 10px;
 }
 
-h1{
+header h1{
   font-size: 60px;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  /* color: white; */
   padding: 20px 0 20px;
 }
 
-h2{
+body * h2{
   font-size: 50px;
   font-family: 'Playfair Display', serif;
-  /* color: white; */
   padding: 10px 0 20px;
+}
+
+body * h3{
+  font-size: 30px;
+}
+
+body * h4{
+  font-size: 25px;
 }
 
 header{
   width: 100%;
   height: 110px;
-  z-index: 10;
 }
 
 .icon{
@@ -105,11 +114,14 @@ header{
   width: 200px;
   height: 200px;
   border: 5px solid rgb(90, 88, 88);
-  margin:  -300px 0 0 70%;
+  position: relative;
+  top: -100px;
+  left: 80%;
+    /* transform: rotate(30deg);  */
 
 }
 #top1,#top2,#top3,#top4{
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 #top1 p,#top3 p{
   text-align: left;
@@ -158,7 +170,7 @@ header{
 }
 #movies li video{
   width: 700px;
-  height: 600px;
+  height: 550px;
 }
 
 
@@ -168,9 +180,9 @@ header{
 }
 #biography{
   color: rgb(183, 183, 183);
-  font-size: 20px;
   text-align: left;
   padding: 5px 0 15px 50px;
+  margin-top: 50px;
 }
 #introduction dl{
   text-align: left;
@@ -179,28 +191,70 @@ header{
 #profimage{
   width: 250px;
   height: 300px;
-  margin: -200px 0 0 70%;
+  margin: -250px 0 0 70%;
   border-radius: 20px;
 }
-#biographyList{
-  margin-bottom: 30px;
+#biographyList dl{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-#biographyList dl dd{
+#biographyList dt{
+  width: 15%;
   padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-#soft ul li{
-  padding: 20px 0 20px;
+#biographyList dd{
+  width: 85%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#soft h4{
+  text-align: right;
+  margin-top: 50px;
+}
+#soft dl{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#soft dt{
+  width: 75%;
+  padding: 0 50px 10px 0;
+  margin-bottom: 10px;
+  text-align: right;
+}
+#soft dd{
+  width: 15%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#adobe{
+  width: 500px;
+  height: 400px;
+  margin-top: -280px;
+  margin-left: 15%;
 }
 
 
 /* contents */
+
 #content li{
   display: inline-block;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 20px 20px;
 }
 #contents li p{
   margin-top: 0;
 }
+#workImage img{
+  border-radius: 10px;
+}
+
+#content ul li:nth-child(4) :hover {
+  background-color: #e42263;
+}
+
 
 
 
