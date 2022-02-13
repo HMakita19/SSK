@@ -261,6 +261,42 @@ header{
 
 
 
+
+
+
+#content ul{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.description1 {
+  display: none;
+  transform: ;
+  opacity: 0;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(https://via.placeholder.com/500x400);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  transition: 1.0s;
+}
+
+#content ul li:hover .description1{
+  display: inline-block;
+  opacity: 1;
+  top: -200px; /*上下表示位置調整*/
+  left: 100px; /*左右表示位置調整*/
+}
+
+
+
+
+
+
+
+
+
 /*work*/
 footer{
   margin-top: 20px;
