@@ -98,8 +98,8 @@ header{
 }
 
 .icon{
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .line-h{
@@ -245,7 +245,8 @@ header{
 
 #content li{
   display: inline-block;
-  padding: 20px 20px 20px 20px;
+  padding: 6px 6px;
+  margin: 0 20px;
 }
 #contents li p{
   margin-top: 0;
@@ -253,26 +254,67 @@ header{
 #workImage img{
   border-radius: 10px;
 }
-
-#content ul li:nth-child(4) :hover {
-  background-color: #e42263;
-}
-
-
-
-
-
-
-
+/* 各イメージ横からフェードイン */
 #content ul{
     position: relative;
     cursor: pointer;
     display: inline-block;
 }
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  transform: translateX(250px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+@keyframes fadeIn2Anime{
+  from {
+    opacity: 0;
+  transform: translateX(-250px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+
 .description1 {
   display: none;
-  transform: ;
-  opacity: 0;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(https://via.placeholder.com/500x400);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  transition: 1.0s;
+}
+.description2 {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(https://via.placeholder.com/500x400);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  transition: 1.0s;
+}
+.description3 {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(https://via.placeholder.com/500x400);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  transition: 1.0s;
+}
+.description4 {
+  display: none;
   position: absolute;
   border-radius: 5px;
   background-image: url(https://via.placeholder.com/500x400);
@@ -282,12 +324,43 @@ header{
   transition: 1.0s;
 }
 
-#content ul li:hover .description1{
+#content ul li:nth-child(1):hover .description1{
   display: inline-block;
-  opacity: 1;
-  top: -200px; /*上下表示位置調整*/
-  left: 100px; /*左右表示位置調整*/
+  animation-name:fadeInAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: 45px; /*左右方向位置調整*/
 }
+#content ul li:nth-child(2):hover .description2{
+  display: inline-block;
+  animation-name:fadeInAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: -115px; /*左右方向位置調整*/
+}
+#content ul li:nth-child(3):hover .description3{
+  display: inline-block;
+  animation-name:fadeIn2Anime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: 0px; /*左右方向位置調整*/
+}
+#content ul li:nth-child(4):hover .description4{
+  display: inline-block;
+  animation-name:fadeIn2Anime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: 0px; /*左右方向位置調整*/
+}
+
 
 
 
