@@ -235,9 +235,10 @@ header{
 }
 #adobe{
   width: 500px;
-  height: 400px;
-  margin-top: -280px;
+  height: 350px;
+  margin-top: -200px;
   margin-left: 15%;
+  border: 3px solid #5a56567c;
 }
 
 
