@@ -10,6 +10,7 @@
 }
 body{
   font-size: 100%;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   font-family: "Hiragino Kaku Gothic proN", "メイリオ", "sans-serif";
 }
@@ -55,11 +56,13 @@ body{
 .left{
   text-align: left;
   padding-left: 8%;
+  padding-left: 10%;
 }
 
 .right{
   text-align: right;
   padding-right: 8%;
+  padding-right: 10%;
 }
 
 main{
@@ -86,10 +89,12 @@ body * h2{
 
 body * h3{
   font-size: 30px;
+  font-size: 35px;
 }
 
 body * h4{
   font-size: 25px;
+  font-size: 30px;
 }
 
 header{
@@ -100,6 +105,8 @@ header{
 .icon{
   width: 70px;
   height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .line-h{
@@ -110,6 +117,7 @@ header{
 
 
 /* top */
+
 #topImage{
   width: 200px;
   height: 200px;
@@ -156,6 +164,7 @@ header{
 
 
 /* gallert */
+
 #movies{
   overflow-x: scroll;
   white-space: nowrap;
@@ -175,6 +184,7 @@ header{
 
 
 /* profile */
+
 #introduction{
   margin: 0 40px;
 }
@@ -237,8 +247,12 @@ header{
   width: 500px;
   height: 400px;
   margin-top: -280px;
+  height: 350px;
+  margin-top: -200px;
   margin-left: 15%;
+  border: 3px solid #5a56567c;
 }
+
 
 
 /* contents */
@@ -246,6 +260,8 @@ header{
 #content li{
   display: inline-block;
   padding: 20px 20px 20px 20px;
+  padding: 6px 6px;
+  margin: 0 20px;
 }
 #contents li p{
   margin-top: 0;
@@ -253,11 +269,122 @@ header{
 #workImage img{
   border-radius: 10px;
 }
+<<<<<<< HEAD
 
 
+=======
+/* 各イメージ横からフェードイン */
+#content ul{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  transform: translateX(250px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+@keyframes fadeIn2Anime{
+  from {
+    opacity: 0;
+  transform: translateX(-300px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+
+.description1 {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(../images/pop_youtube.png);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 350px;
+  transition: 2s;
+}
+.description2 {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(../images/pop_tiktok.png);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 350px;
+  transition: 2s;
+}
+.description3 {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(../images/pop_instagram.png);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 350px;
+  transition: 2s;
+}
+.description4 {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(../images/pop_comingsoon.png);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 350px;
+  transition: 2s;
+}
+
+
+#content ul li:nth-child(1):hover .description1{
+  display: inline-block;
+  animation-name:fadeInAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: -200px; /*左右方向位置調整*/
+}
+#content ul li:nth-child(2):hover .description2{
+  display: inline-block;
+  animation-name:fadeInAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: -80px; /*左右方向位置調整*/
+}
+#content ul li:nth-child(3):hover .description3{
+  display: inline-block;
+  animation-name:fadeIn2Anime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: 80px; /*左右方向位置調整*/
+}
+#content ul li:nth-child(4):hover .description4{
+  display: inline-block;
+  animation-name:fadeIn2Anime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  top: -400px; /*上下方向位置調整*/
+  left: 200px; /*左右方向位置調整*/
+}
+>>>>>>> pop
 
 
 /*work*/
+
 footer{
   margin-top: 20px;
 }
@@ -267,4 +394,8 @@ footer{
 #caution{
   font-size: 18px;
   color: rgb(196, 61, 61);
+}
+#email{
+  padding: 10px 0;
+  font-weight: 800;
 }
