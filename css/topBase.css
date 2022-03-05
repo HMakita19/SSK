@@ -269,10 +269,6 @@ header{
 #workImage img{
   border-radius: 10px;
 }
-<<<<<<< HEAD
-
-
-=======
 /* 各イメージ横からフェードイン */
 #content ul{
     position: relative;
@@ -380,8 +376,6 @@ header{
   top: -400px; /*上下方向位置調整*/
   left: 200px; /*左右方向位置調整*/
 }
->>>>>>> pop
-
 
 /*work*/
 
