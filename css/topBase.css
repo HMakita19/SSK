@@ -275,7 +275,7 @@ header{
 @keyframes fadeIn2Anime{
   from {
     opacity: 0;
-  transform: translateX(-250px);
+  transform: translateX(-300px);
   }
 
   to {
@@ -288,41 +288,41 @@ header{
   display: none;
   position: absolute;
   border-radius: 5px;
-  background-image: url(https://via.placeholder.com/500x400);
+  background-image: url(https://via.placeholder.com/500x350);
   background-repeat: no-repeat;
   width: 500px;
-  height: 400px;
-  transition: 1.0s;
+  height: 350px;
+  transition: 2s;
 }
 .description2 {
   display: none;
   position: absolute;
   border-radius: 5px;
-  background-image: url(/images/pop_tiktok.jpg);
+  background-image: url(../images/pop_tiktok.png);
   background-repeat: no-repeat;
   width: 500px;
-  height: 400px;
-  transition: 1.0s;
+  height: 350px;
+  transition: 2s;
 }
 .description3 {
   display: none;
   position: absolute;
   border-radius: 5px;
-  background-image: url(/images/pop_instagram.jpg);
+  background-image: url(../images/pop_instagram.png);
   background-repeat: no-repeat;
   width: 500px;
-  height: 400px;
-  transition: 1.0s;
+  height: 350px;
+  transition: 2s;
 }
 .description4 {
   display: none;
   position: absolute;
   border-radius: 5px;
-  background-image: url(/images/pop_coming-soon.jpg);
+  background-image: url(../images/pop_comingsoon.png);
   background-repeat: no-repeat;
   width: 500px;
-  height: 400px;
-  transition: 1.0s;
+  height: 350px;
+  transition: 2s;
 }
 
 #content ul li:nth-child(1):hover .description1{
@@ -332,7 +332,7 @@ header{
   animation-fill-mode:forwards;
   opacity:0;
   top: -400px; /*上下方向位置調整*/
-  left: 45px; /*左右方向位置調整*/
+  left: -200px; /*左右方向位置調整*/
 }
 #content ul li:nth-child(2):hover .description2{
   display: inline-block;
@@ -341,7 +341,7 @@ header{
   animation-fill-mode:forwards;
   opacity:0;
   top: -400px; /*上下方向位置調整*/
-  left: -115px; /*左右方向位置調整*/
+  left: -80px; /*左右方向位置調整*/
 }
 #content ul li:nth-child(3):hover .description3{
   display: inline-block;
@@ -350,7 +350,7 @@ header{
   animation-fill-mode:forwards;
   opacity:0;
   top: -400px; /*上下方向位置調整*/
-  left: 0px; /*左右方向位置調整*/
+  left: 80px; /*左右方向位置調整*/
 }
 #content ul li:nth-child(4):hover .description4{
   display: inline-block;
@@ -359,7 +359,7 @@ header{
   animation-fill-mode:forwards;
   opacity:0;
   top: -400px; /*上下方向位置調整*/
-  left: 0px; /*左右方向位置調整*/
+  left: 200px; /*左右方向位置調整*/
 }
 
 
