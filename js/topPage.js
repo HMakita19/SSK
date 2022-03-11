@@ -1,7 +1,7 @@
 particlesJS("particles-js", {   //アニメーションを表示する要素(id)を指定
   particles: {
     number: { 
-      value: 100,   // 要素に出力する数
+      value: 80,   // 要素に出力する数
       density: { 
         enable: true,   //true:有効, false:無効
         value_area: 500   // 表示間隔
@@ -44,9 +44,9 @@ particlesJS("particles-js", {   //アニメーションを表示する要素(id)
     // モーション
     move: {
       enable: true,  //true:有効, false:無効
-      speed: 0.7,  // 速度
+      speed: 0.5,  // 速度
       direction: "none",  // 動く方向 none, top, top-right, right, bottom-right, bottom, bottom-left, left, top-left
-      random: false,  // ランダム設定 true:有効, false:無効
+      random: true,  // ランダム設定 true:有効, false:無効
       straight: false,  // 静止 true:有効, false:無効
       out_mode: "out",  // 外側の動き ボックス内：bounce 外に逃がす：out
       bounce: false,  // ランダム設定 true:有効, false:無効
